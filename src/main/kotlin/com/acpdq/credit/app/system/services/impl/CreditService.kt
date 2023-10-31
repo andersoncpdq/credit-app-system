@@ -3,9 +3,11 @@ package com.acpdq.credit.app.system.services.impl
 import com.acpdq.credit.app.system.entities.Credit
 import com.acpdq.credit.app.system.repositories.CreditRepository
 import com.acpdq.credit.app.system.services.ICreditService
+import org.springframework.stereotype.Service
 import java.lang.RuntimeException
 import java.util.*
 
+@Service
 class CreditService(
     private val creditRepository: CreditRepository,
     private val customerService: CustomerService
