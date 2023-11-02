@@ -27,7 +27,7 @@ data class CustomerDTO(
     val password: String,
 
     @field:NotEmpty(message = "Entrada inválida!")
-    val zipcode: String,
+    val zipCode: String,
 
     @field:NotEmpty(message = "Entrada inválida!")
     val street: String
@@ -41,7 +41,7 @@ data class CustomerDTO(
         email = this.email,
         password = this.password,
         address = Address(
-            zipCode = this.zipcode,
+            zipCode = this.zipCode,
             street = this.street
         )
     )

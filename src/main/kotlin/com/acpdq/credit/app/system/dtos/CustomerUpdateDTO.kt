@@ -16,7 +16,7 @@ data class CustomerUpdateDTO(
     val income: BigDecimal,
 
     @field:NotEmpty(message = "Entrada inválida!")
-    val zipcode: String,
+    val zipCode: String,
 
     @field:NotEmpty(message = "Entrada inválida!")
     val street: String
@@ -26,7 +26,7 @@ data class CustomerUpdateDTO(
         customer.firstName = this.firstName
         customer.lastName = this.lastName
         customer.income = this.income
-        customer.address.zipCode = this.zipcode
+        customer.address.zipCode = this.zipCode
         customer.address.street = this.street
         return customer
     }

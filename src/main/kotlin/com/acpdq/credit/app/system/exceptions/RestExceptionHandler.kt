@@ -27,7 +27,7 @@ class RestExceptionHandler {
 
         return ResponseEntity(
             ExceptionsDetails(
-                title = "Bad Request",
+                title = "Bad Request!",
                 timestamp = LocalDateTime.now(),
                 status = HttpStatus.BAD_REQUEST.value(),
                 exception = ex.javaClass.toString(),
