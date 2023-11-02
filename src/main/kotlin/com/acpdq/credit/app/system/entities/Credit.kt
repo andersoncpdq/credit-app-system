@@ -10,7 +10,7 @@ import java.util.UUID
 @Table(name = "tb_credit")
 data class Credit(
     @Column(nullable = false, unique = true)
-    val creditCode: UUID = UUID.randomUUID(),
+    var creditCode: UUID = UUID.randomUUID(),
 
     @Column(nullable = false)
     val creditValue: BigDecimal = BigDecimal.ZERO,
